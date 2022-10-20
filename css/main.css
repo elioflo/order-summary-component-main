@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-color: var(--pale-blue);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 600px) {
+  .container {
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
+}
+
+.card {
+  width: 510px;
+  height: 790px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  font-family: "Red Hat Display";
+}
+.card__title {
+  font-weight: 900;
+  margin-top: 55px;
+  margin-bottom: 30px;
+}
+.card__description {
+  font-weight: 500;
+  color: var(--desaturated-blue);
+  padding: 0 75px;
+}
+.card__button {
+  margin-top: 40px;
+  height: 60px;
+  width: 400px;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+  border-style: none;
+  font-size: 16px;
+}
+.card__button:hover {
+  background-color: hsl(245deg, 83%, 68%);
+}
+.card__cancel {
+  display: block;
+  margin-top: 40px;
+  text-decoration: none;
+  color: var(--desaturated-blue);
+  font-weight: 700;
+}
+.card__cancel:hover {
+  color: var(--dark-blue);
+}
+@media (max-width: 600px) {
+  .card {
+    min-width: 315px;
+    width: 315px;
+    height: 550px;
+    font-size: x-small;
+  }
+  .card__title {
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+  .card__button {
+    margin-top: 22px;
+    height: 50px;
+    width: 270px;
+    font-size: small;
+  }
+  .card__cancel {
+    margin-top: 25px;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 240px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+@media (max-width: 600px) {
+  .img {
+    height: 150px;
+  }
+}
+
+.plan {
+  margin: 30px auto 0 auto;
+  height: 110px;
+  width: 400px;
+  border-radius: 10px;
+  background-color: var(--very-pale-blue);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--dark-blue);
+}
+.plan__description {
+  width: 180px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.plan__period {
+  font-weight: 700;
+}
+.plan__price {
+  font-weight: 400;
+  color: var(--desaturated-blue);
+}
+.plan__icono {
+  width: 54px;
+  height: 54px;
+  border-radius: 100%;
+  background-color: var(--pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plan a {
+  font-weight: 700;
+}
+.plan a:hover {
+  text-decoration: none;
+  color: hsl(245deg, 83%, 68%);
+}
+@media (max-width: 600px) {
+  .plan {
+    width: 270px;
+    height: 80px;
+  }
+  .plan__description {
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+  }
+  .plan__icono {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

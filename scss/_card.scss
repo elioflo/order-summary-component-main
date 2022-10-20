@@ -1,0 +1,73 @@
+.card {
+    width: 510px;
+    height: 790px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Red Hat Display';
+
+    &__title {
+        font-weight: 900;
+        margin-top: 55px;
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        font-weight: 500;
+        color: var(--desaturated-blue);
+        padding: 0 75px;
+    }
+
+    &__button {
+        margin-top: 40px;
+        height: 60px;
+        width: 400px;
+        border-radius: 10px;
+        font-weight: bold;
+        background-color: var(--bright-blue);
+        color: var(--very-pale-blue);
+        border-style: none;
+        font-size: 16px;
+    }
+
+    &__button:hover {
+        background-color: hsl(245,83%,68%);
+    }
+
+    &__cancel {
+        display: block;
+        margin-top: 40px;
+        text-decoration: none;
+        color: var(--desaturated-blue);
+        font-weight: 700;
+    }
+
+    &__cancel:hover {
+        color: var(--dark-blue);
+    }
+
+    @media (max-width: 600px) {
+        min-width: 315px;
+        width: 315px;
+        height: 550px;
+        font-size: x-small;
+        
+        &__title {
+            margin-top: 35px;
+            margin-bottom: 30px;
+        }
+
+        &__button {
+            margin-top: 22px;
+            height: 50px;
+            width: 270px;
+            font-size: small;
+        }
+
+        &__cancel {
+            margin-top: 25px;
+        }
+
+    }
+
+}
